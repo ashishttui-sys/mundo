@@ -126,7 +126,7 @@
                         android:textSize="11sp"/>
 
                     <TextView
-                        android:text="BGMI v4.3.0"
+                        android:text="BGMI v4.4.0"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
                         android:textSize="21sp"
