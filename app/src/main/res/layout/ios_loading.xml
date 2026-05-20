@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="280dp" 
+    android:gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:padding="28dp"
+    android:elevation="12dp"
+    android:orientation="vertical">
+
+    <!-- Icon Container -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="18dp"
+        app:cardBackgroundColor="#F8F9FA"
+        app:cardElevation="2dp"
+        app:strokeColor="#E0E0E0"
+        app:strokeWidth="1dp">
+        
+        <ImageView
+            android:id="@+id/loadingIcon"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:src="@drawable/ic_launcher" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/loadingText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="System Authenticating"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.02" />
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_height="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#0070C8"
+        android:progressTint="#0070C8"
+        android:progressBackgroundTint="#E0E0E0" />
+
+    <!-- Progress Status Text -->
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Bypassing Security..."
+        android:textColor="#757575"
+        android:textSize="12sp"
+        android:letterSpacing="0.05" />
+
+    <!-- Continue Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/okButton"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="CONTINUE"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="12dp"
+        app:backgroundTint="#0070C8"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:letterSpacing="0.5"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconGravity="textEnd"
+        app:iconTint="#FFFFFF" />
+
+</LinearLayout>

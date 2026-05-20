@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020B18">
+
+    <!-- Background Glow -->
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-80dp"
+        android:background="#1200D9FF"/>
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Logo -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:cardCornerRadius="18dp"
+            app:cardBackgroundColor="#081B32"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/india"
+                android:padding="10dp"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TapaTap Loader"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginStart="14dp"/>
+    </LinearLayout>
+
+    <!-- Timer Section -->
+    <LinearLayout
+        android:id="@+id/timerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvExpires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0d 2h 23m\n22s"
+            android:textColor="#00D9FF"
+            android:textSize="52sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:shadowColor="#00D9FF"
+            android:shadowRadius="20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALID UNTIL : 2026-05-20 01:20:25"
+            android:textColor="#6D7585"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.08"/>
+    </LinearLayout>
+
+    <!-- Feature Cards -->
+    <LinearLayout
+        android:id="@+id/cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerLayout"
+        android:layout_marginTop="70dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="22dp"
+                app:cardBackgroundColor="#09111D"
+                app:strokeColor="#16293F"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp">
+
+<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="GAME"
+                        android:textColor="#00D9FF"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:text="BGMI v4.3.0"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="22dp"
+                app:cardBackgroundColor="#09111D"
+                app:strokeColor="#16293F"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="STATUS"
+                        android:textColor="#00D9FF"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:text="SAFE"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="22dp"
+                app:cardBackgroundColor="#09111D"
+                app:strokeColor="#16293F"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="TRACKING"
+                        android:textColor="#00D9FF"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:text="BULLET TRACK (BT)"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+<!-- Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="22dp"
+                app:cardBackgroundColor="#09111D"
+                app:strokeColor="#16293F"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="AUTO-AIM"
+                        android:textColor="#00D9FF"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:text="AIMBOT"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="21sp"
+                        android:layout_marginTop="6dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- System Ready -->
+    <TextView
+        android:id="@+id/systemReady"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S y s t e m   R e a d y"
+        android:textColor="#8B95A7"
+        android:textSize="13sp"
+        android:letterSpacing="0.25"
+        android:layout_below="@id/cards"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"/>
+
+    <!-- Start Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginHorizontal="34dp"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="#00D9FF"
+        app:cardElevation="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="START GAME"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

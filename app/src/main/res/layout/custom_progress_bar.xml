@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:padding="30dp"
+    android:elevation="15dp"
+    android:orientation="vertical">
+
+    <!-- Glowing Progress Circle -->
+    <FrameLayout
+        android:layout_width="85dp"
+        android:layout_height="85dp">
+        
+        <!-- Outer Glow -->
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/pink_glow_ring" />
+            
+        <!-- Progress -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="35dp"
+            app:cardBackgroundColor="#FF16213E"
+            app:cardElevation="4dp"
+            app:strokeColor="#FF69B4"
+            app:strokeWidth="1.5dp">
+            
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:indeterminateTint="#FF69B4"
+                style="?android:attr/progressBarStyleLarge" />
+        </com.google.android.material.card.MaterialCardView>
+        
+        <!-- Center Lock -->
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_lock_idle_lock"
+            android:tint="#FF69B4" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Checking resources..."
+        android:textColor="#FFB6C1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:letterSpacing="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <View
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:background="#FF69B4"
+            android:layout_marginEnd="8dp" />
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAFE LOADER SECURITY SYSTEM"
+            android:textColor="#FFB6C1"
+            android:textSize="9sp"
+            android:textAllCaps="true"
+            android:letterSpacing="1.5"
+            android:alpha="0.7" />
+    </LinearLayout>
+
+</LinearLayout>
